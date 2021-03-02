@@ -23,7 +23,7 @@ body {
 
 #content {
     margin: auto;
-    padding-top, padding-bottom: 100px;
+    padding: 100px 0px 100px 0px;
     width: 40%;
 }
 

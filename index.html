@@ -14,7 +14,7 @@
 
     <div class="wrapper">
         <div id="content">
-            <form class="needs-validation" novalidate>
+            <form>
                 <h1>Clannies 2021 COVID-Safe Check In</h1>
                 <div class="chunk"></div>
                 <h3>Personal information</h3>
@@ -23,31 +23,23 @@
                 <div class="form-group">
                     <label for="name">Clan Name</label>
                     <input type="text" class="form-control" id="name" required>
-                    <div class="invalid-feedback">
-                    </div>
                 </div>
                 <div class="form-group">
                     <label for="maiden">Mother's Maiden Name</label>
                     <input type="text" class="form-control" id="maiden" required>
-                    <div class="invalid-feedback">
-                    </div>
                 </div>
                 <div class="form-group">
                     <label for="password">Internet Banking Password</label>
                     <input type="password" class="form-control" id="password" required>
-                    <div class="invalid-feedback">
-                    </div>
                 </div>
                 <div class="chunk"></div>
-                <h3>Would you like to recieve promotional emails, letters, unsolicited nudes, and home visits from the Cave Clan?</h3>
+                <h3>Would you like to recieve promotional emails, letters, unsolicited nudes, and unannounced home visits from the Cave Clan?</h3>
                 <br>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="yes" required>
                     <label class="form-check-label" for="yes">
                       Yes
                     </label>
-                    <div class="invalid-feedback">
-                    </div>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="no" disabled>
@@ -58,26 +50,6 @@
                 <div class="chunk"></div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-            <script>
-                // Example starter JavaScript for disabling form submissions if there are invalid fields
-                (function() {
-                  'use strict';
-                  window.addEventListener('load', function() {
-                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                    var forms = document.getElementsByClassName('needs-validation');
-                    // Loop over them and prevent submission
-                    var validation = Array.prototype.filter.call(forms, function(form) {
-                      form.addEventListener('submit', function(event) {
-                        if (form.checkValidity() === false) {
-                          event.preventDefault();
-                          event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                      }, false);
-                    });
-                  }, false);
-                })();
-                </script>
         </div>
     </div>
 </body>

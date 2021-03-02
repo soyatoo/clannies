@@ -14,6 +14,10 @@
 
     <div class="wrapper">
         <div id="content">
+            <div id="messages" class="hide" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div id="messages_content">You did it!</div>
+              </div>
             <form>
                 <h1>Clannies 2021 COVID-Safe Check In</h1>
                 <div class="chunk"></div>
@@ -52,5 +56,16 @@
             </form>
         </div>
     </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+        $('#form').submit(function(e) {
+            $('#messages').removeClass('hide').addClass('alert alert-success alert-dismissible').slideDown().show();
+            $('#messages_content').html('<h4>MESSAGE HERE</h4>');
+            $('#modal').modal('show');
+            e.preventDefault();
+        });
+    </script>
 </body>
 </html>

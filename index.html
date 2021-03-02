@@ -61,7 +61,7 @@
                     </label>
                 </div>
                 <div class="chunk"></div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" onclick=" relocate_home()">Submit</button>
             </form>
         </div>
     </div>
@@ -69,12 +69,10 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <script>
-        $('#form').submit(function(e) {
-            $('#messages').removeClass('hide').addClass('alert alert-success alert-dismissible').slideDown().show();
-            $('#messages_content').html('<h4>MESSAGE HERE</h4>');
-            $('#modal').modal('show');
-            e.preventDefault();
-        });
-    </script>
+        function relocate_home()
+        {
+             location.href = "/success";
+        } 
+        </script>
 </body>
 </html>
